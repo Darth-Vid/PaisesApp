@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.small-flag{
+    width: 50px;
+}
+
+.medium-flag{
+    width: 100px;
+}
+
+h3{
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
