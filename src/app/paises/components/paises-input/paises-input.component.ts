@@ -13,7 +13,7 @@ export class PaisesInputComponent implements OnInit {
   ngOnInit(): void {
     this.debouncer
     .pipe(
-      debounceTime(700)
+      debounceTime(300)
     )
     .subscribe( valor =>{
       this.onDebounce.emit( valor );

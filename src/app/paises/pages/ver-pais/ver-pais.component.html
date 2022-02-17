@@ -16,7 +16,7 @@
             <h3>Información</h3>
             <ul class="list-group">
                 <li class="list-group-item text-center">
-                    <img [src]="paises[0].flags.png" [alt]="paises[0].name" class="medium-flag">
+                    <img [src]="paises[0].flags.png" [alt]="paises[0].translations['spa'].common" [title]="paises[0].translations['spa'].common" class="medium-flag">
                 </li>
                 <li class="list-group-item text-center">
                     <strong>Población:</strong> {{paises[0].population | number}}
@@ -38,7 +38,7 @@
                     <strong><a href="{{paises[0].maps.googleMaps}}">Locacion</a></strong>
                 </li>
                 <li class="list-group-item text-center">
-                    <img [src]="paises[0].coatOfArms.png" [alt]="paises[0].name" class="medium-flag">
+                    <img [src]="paises[0].coatOfArms.png" title="Escudo de armas" [alt]="paises[0].name" class="medium-flag">
                 </li>
             </ul>
         </div>
@@ -47,13 +47,13 @@
     <h3>Traducciones</h3>
     <div class="row">
         <div class="col text-center">
-            <span class="badge bg-primary mr-6">{{paises[0].translations['deu'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['ara'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['est'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['fra'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['hrv'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['ita'].common}}</span>
-            <span class="badge bg-primary mr-1">{{paises[0].translations['kor'].common}}</span>
+            <span title="Aleman" class="badge bg-primary mr-6">{{paises[0].translations['deu'].common}}</span>
+            <span title="Arabe" class="badge bg-primary mr-1">{{paises[0].translations['ara'].common}}</span>
+            <span title="Estonio" class="badge bg-primary mr-1">{{paises[0].translations['est'].common}}</span>
+            <span title="Frances" class="badge bg-primary mr-1">{{paises[0].translations['fra'].common}}</span>
+            <span title="Croata" class="badge bg-primary mr-1">{{paises[0].translations['hrv'].common}}</span>
+            <span title="Italiano" class="badge bg-primary mr-1">{{paises[0].translations['ita'].common}}</span>
+            <span title="Coreano" class="badge bg-primary mr-1">{{paises[0].translations['kor'].common}}</span>
 
         </div>
     </div>
